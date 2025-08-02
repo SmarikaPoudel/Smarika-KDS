@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uniglobe SS/College - Page 2</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #003366;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .logo img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #0055aa;
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #003366;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="uniglobe.png" alt="Uniglobe Logo" />
+      <h2>Uniglobe SS/College</h2>
+    </div>
+    
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    
+    <nav>
+      <ul id="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="course.html">Course</a></li>
+        <li><a href="UGSS Club.html">UGSS Club</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="MIS.html">MIS</a></li>
+        <li><a href="Feedback.html">Feedback</a></li>
+        <li><a href="https://uniglobecollege.edu.np" target="_blank">Visit Official Site</a></li>
