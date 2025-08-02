@@ -11,8 +11,160 @@
     </style>
 </head>
 <body>
-
-    <h1>Welcome to UNIGLOBE SS COLLEGE </h1>
+<h1> <centre> WELCOME TO UNIGLOBE COLLEGE</centre></h1>
+    <h1>UNIGLOBE SS COLLEGE</h1>
     <marquee behavior="scroll" direction="right">hello UNIGLOBE SS COLLEGE</marquee>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #0055a5;
+    }
+    nav a {
+      padding: 14px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #003f7f;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091012184-3a1e6b6d1b65?fit=crop&w=1350&q=80') center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 8px #000;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .course-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form {
+      display: grid;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      font-size: 1rem;
+      width: 100%;
+    }
+    button {
+      background-color: #0055a5;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #003f7f;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My College</h1>
+    <p>Empowering Education for a Better Future</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Welcome to My College
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>My College is a leading institution dedicated to providing top-quality education and fostering an environment of growth and innovation. We offer various undergraduate and postgraduate programs across disciplines.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses Offered</h2>
+    <div class="courses">
+      <div class="course-card">
+        <h3>Bachelor of Science</h3>
+        <p>Specializations in Physics, Chemistry, Biology, and more.</p>
+      </div>
+      <div class="course-card">
+        <h3>Bachelor of Arts</h3>
+        <p>Programs in Literature, History, Sociology, and others.</p>
+      </div>
+      <div class="course-card">
+        <h3>Computer Science</h3>
+        <p>Learn coding, data structures, web development, AI, and more.</p>
+      </div>
+      <div class="course-card">
+        <h3>Business Administration</h3>
+        <p>Focus on marketing, finance, and management skills.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 My College. All rights reserved.
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been received.");
+      e.target.reset();
+    }
+  </script>
+
 </body>
 </html>
